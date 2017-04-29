@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Fusion Master Application" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="75*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="CommandBox" HorizontalAlignment="Left" Height="23" Margin="71,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="335" Grid.ColumnSpan="2"/>
+        <Button x:Name="Execute" Content="Execute" HorizontalAlignment="Left" Margin="128.4,31,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontStyle="Italic" Click="Execute_Click" Grid.Column="1" Height="23"/>
+        <Button x:Name="button" Content="Start up server" HorizontalAlignment="Left" Margin="225,126,0,0" VerticalAlignment="Top" Width="92" RenderTransformOrigin="0.656,0.568" Grid.ColumnSpan="2" FontWeight="Bold" FontStyle="Italic" Click="button_Click"/>
+        <Button x:Name="ShutdownBtn" Content="Shutdown" HorizontalAlignment="Left" Margin="61,195,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontStyle="Italic" Click="ShutdownBtn_Click"/>
+        <Button x:Name="RestartBtn" Content="Restart" HorizontalAlignment="Left" Margin="61,230,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontStyle="Italic" Click="RestartBtn_Click"/>
+        <Button x:Name="RunLolBtn" Content="Run LOL" HorizontalAlignment="Left" Margin="93.4,196,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.213,0.528" FontWeight="Bold" FontStyle="Italic" Click="RunLolBtn_Click" Grid.Column="1"/>
+        <Button x:Name="RunSteamBtn" Content="Run Steam" HorizontalAlignment="Left" Margin="93.4,230,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontStyle="Italic" Click="RunSteamBtn_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>
